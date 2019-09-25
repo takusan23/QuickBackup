@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QuickImageBackup</string>
+    <string name="save_setting">Save settings</string>
+    <string name="backup_run">Backup execution</string>
+    <string name="backup_menu">Backup menu</string>
+    <string name="backup_setting">Backup settings</string>
+    <string name="setting_file_count">Number of backups performed at one time</string>
+    <string name="finish_backup">Backup finished</string>
+    <string name="backup_progress_notification">Backup progress notification</string>
+    <string name="backup_progress_notification_text">A backup is in progress</string>
+</resources>
