@@ -23,7 +23,7 @@
 
         <service
             android:name=".QuickImageBackupQSTile"
-            android:icon="@drawable/ic_folder_open_black_24dp"
+            android:icon="@drawable/icon"
             android:label="@string/backup_run"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>

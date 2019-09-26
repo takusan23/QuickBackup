@@ -4,8 +4,15 @@
     <string name="backup_run">バックアップ実行</string>
     <string name="backup_menu">バックアップメニュー</string>
     <string name="backup_setting">バックアップ設定</string>
-    <string name="setting_file_count">一度に行うバックアップの件数</string>
+    <string name="setting_photo_file_count">一度に行うバックアップの件数（写真）</string>
     <string name="finish_backup">バックアップが終了しました</string>
     <string name="backup_progress_notification">バックアップ進捗通知</string>
     <string name="backup_progress_notification_text">バックアップを実行中です</string>
+    <string name="setting_video_file_count">一度に行うバックアップの件数（動画）</string>
+    <string name="backup_progress_notification_text_image">写真のバックアップを実行しています</string>
+    <string name="backup_progress_notification_text_video">動画のバックアップを実行しています</string>
+    <string name="backup_photo_run">写真のバックアップ開始</string>
+    <string name="backup_video_run">動画のバックアップ開始</string>
+    <string name="finish_video_backup">動画のバックアップが完了しました</string>
+    <string name="finish_photo_backup">写真のバックアップが完了しました</string>
 </resources>

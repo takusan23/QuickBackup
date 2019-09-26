@@ -20,10 +20,17 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/backup_start_button"
+            android:id="@+id/backup_start_photo_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/backup_run" />
+            android:text="@string/backup_photo_run" />
+
+        <Button
+            android:id="@+id/backup_start_video_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backup_video_run" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -41,7 +48,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="2dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -49,15 +57,40 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/setting_file_count"
-                    android:inputType="number"
-                    android:text="10"
+                    android:id="@+id/setting_photo_file_count"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/setting_file_count" />
+                    android:hint="@string/setting_photo_file_count"
+                    android:inputType="number"
+                    android:text="10" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/setting_movie_file_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setting_video_file_count"
+                    android:inputType="number"
+                    android:text="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/setting_save_button"

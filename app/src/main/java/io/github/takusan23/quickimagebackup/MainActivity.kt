@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         pref_setting = PreferenceManager.getDefaultSharedPreferences(this)
+        loadSetting()
 
         //パーミッションの確認
         if (checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -31,9 +32,13 @@ class MainActivity : AppCompatActivity() {
         } else {
             //権限持ってる
             //バックアップ実行？
-            backup_start_button.setOnClickListener {
+            backup_start_photo_button.setOnClickListener {
                 val quickBackup = QuickBackup(this)
                 quickBackup.getImageFromMediaStore()
+            }
+            backup_start_video_button.setOnClickListener {
+                val quickBackup = QuickBackup(this)
+                quickBackup.getVideoFromMediaStore()
             }
         }
 
@@ -50,8 +55,14 @@ class MainActivity : AppCompatActivity() {
 
     fun saveSetting() {
         val editor = pref_setting.edit()
-        editor.putInt("file_count", setting_file_count.text.toString().toInt())
+        editor.putInt("photo_file_count", setting_photo_file_count.text.toString().toInt())
+        editor.putInt("video_file_count", setting_movie_file_count.text.toString().toInt())
         editor.apply()
+    }
+
+    fun loadSetting() {
+        setting_photo_file_count.setText(pref_setting.getInt("photo_file_count", 3).toString())
+        setting_movie_file_count.setText(pref_setting.getInt("video_file_count", 3).toString())
     }
 
 }

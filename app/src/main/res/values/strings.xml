@@ -4,8 +4,15 @@
     <string name="backup_run">Backup execution</string>
     <string name="backup_menu">Backup menu</string>
     <string name="backup_setting">Backup settings</string>
-    <string name="setting_file_count">Number of backups performed at one time</string>
+    <string name="setting_photo_file_count">Number of backups performed at one time</string>
     <string name="finish_backup">Backup finished</string>
     <string name="backup_progress_notification">Backup progress notification</string>
     <string name="backup_progress_notification_text">A backup is in progress</string>
+    <string name="setting_video_file_count">Number of backups performed at one time</string>
+    <string name="backup_progress_notification_text_image">Running photo backup</string>
+    <string name="backup_progress_notification_text_video">Running video backup</string>
+    <string name="backup_photo_run">Start photo backup</string>
+    <string name="backup_video_run">Start video backup</string>
+    <string name="finish_photo_backup">Photo backup completed</string>
+    <string name="finish_video_backup">Video backup completed</string>
 </resources>
